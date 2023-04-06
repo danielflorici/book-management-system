@@ -40,7 +40,7 @@ public class Main {
                     System.out.println("Not implemented");
                     break;
                 case DELETE_AUTHOR:
-                    System.out.println("Not implemented");
+                  authorController.deleteById();
                     break;
                 case  VIEW_ALL_AUTHORS:
                     authorController.displayAll();
