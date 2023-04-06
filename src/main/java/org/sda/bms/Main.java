@@ -42,6 +42,9 @@ public class Main {
                 case DELETE_AUTHOR:
                     System.out.println("Not implemented");
                     break;
+                case  VIEW_ALL_AUTHORS:
+                    authorController.displayAll();
+                    break;
                 case UNKNOWN:
                     System.out.println("Please insert a value option!!!!!!");
                     break;

@@ -5,7 +5,8 @@ import java.util.Optional;
 public enum UserOption {
     CREATE_AUTHOR(1, "Create Author"),
     UPDATE_AUTHOR(2, "Update Author"),
-    DELETE_AUTHOR(3, " Delete Author"),
+    DELETE_AUTHOR(3, "Delete Author"),
+    VIEW_ALL_AUTHORS(4,"List All Authors"),
     EXIT(99, "Exit"),
     UNKNOWN(99999, "Unlnown");
     private final int option;
