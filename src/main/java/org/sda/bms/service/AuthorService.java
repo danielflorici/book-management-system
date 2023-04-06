@@ -8,5 +8,6 @@ public interface AuthorService {
     void create(String firstName, String lastName);
     List<Author> findAll();
     void delete(int id);
+    void update(int id, String firtName, String lastName);
 
 }
