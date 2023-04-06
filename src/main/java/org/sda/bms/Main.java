@@ -1,6 +1,10 @@
 package org.sda.bms;
 
+import org.sda.bms.controller.AuthorController;
 import org.sda.bms.controller.UserOption;
+
+import org.sda.bms.repository.AuthorRepositoryImpl;
+import org.sda.bms.service.AuthorServiceImpl;
 import org.sda.bms.utils.SessionManager;
 
 import java.util.Scanner;
@@ -11,6 +15,10 @@ public class Main {
 
         //Dependencies
         Scanner scanner = new Scanner(System.in);
+        AuthorController authorController = new AuthorController(
+                new AuthorServiceImpl(new AuthorRepositoryImpl()),
+                scanner
+        );
 
 
         UserOption userOption = UserOption.UNKNOWN;
@@ -26,7 +34,7 @@ public class Main {
             }
             switch (userOption) {
                 case CREATE_AUTHOR:
-                    System.out.println("Not Implemented");
+                   authorController.create();
                     break;
                 case UPDATE_AUTHOR:
                     System.out.println("Not implemented");
