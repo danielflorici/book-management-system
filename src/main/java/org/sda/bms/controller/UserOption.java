@@ -8,12 +8,14 @@ public enum UserOption {
     DELETE_AUTHOR(3, "Delete Author"),
     VIEW_ALL_AUTHORS(4,"List All Authors"),
     CREATE_BOOK(5,"Create book"),
-    EXIT(99, "Exit"),
     UNKNOWN(99999, "Unlnown"),
     VIEW_ALL_BOOKS(6,"List All Books"),
     VIEW_BOOK_BY_ID(7,"Book bY Id"),
     DELETE_BOOK(8,"Delete Book"),
-    UPDATE_BOOK(9,"Update Book");
+    UPDATE_BOOK(9,"Update Book"),
+    CREATE_REVIEW(10, "Create Review"),
+    EXIT(99, "Exit");
+
     private final int option;
     private final String displayName;
 

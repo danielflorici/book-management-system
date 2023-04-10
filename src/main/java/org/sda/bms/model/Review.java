@@ -25,6 +25,9 @@ public class Review {
         this.comment = comment;
     }
 
+    public Review(int score, String comment) {
+    }
+
     public Integer getId() {
         return id;
     }
