@@ -58,6 +58,9 @@ public class Main {
                 case  VIEW_ALL_AUTHORS:
                     authorController.displayAll();
                     break;
+                case VIEW_ALL_BOOKS:
+                    bookController.displayAll();
+                    break;
                 case UNKNOWN:
                     System.out.println("Please insert a value option!!!!!!");
                     break;

@@ -9,7 +9,8 @@ public enum UserOption {
     VIEW_ALL_AUTHORS(4,"List All Authors"),
     CREATE_BOOK(5,"Create book"),
     EXIT(99, "Exit"),
-    UNKNOWN(99999, "Unlnown");
+    UNKNOWN(99999, "Unlnown"),
+    VIEW_ALL_BOOKS(6,"List All Books");
     private final int option;
     private final String displayName;
 

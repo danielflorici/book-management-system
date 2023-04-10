@@ -35,9 +35,9 @@ Done BMS-10-As a user, I should be able to add a new Book into the system;
      For any validation problem found, the user will be prompted with a messsage
      If the provided author id does not exist in the system, the user will be prompted with a message
 
-BMS-11-As a user, I should be able to view the whole list of books existing in the system;
+Done BMS-11-As a user, I should be able to view the whole list of books existing in the system;
     Each line will contain id of the book, title of teh book,first name of the author and the last name of the author;
-    If no author is found in the system, the user will be prompted with a message
+    If no book is found in the system, the user will be prompted with a message
 
 BMS-12-As a user, I should be able to view all the details for a given book;
     I should be able to specify the following data:
