@@ -64,6 +64,9 @@ public class Main {
                 case VIEW_BOOK_BY_ID:
                     bookController.displayById();
                     break;
+                case DELETE_BOOK:
+                    bookController.deleteById();
+                    break;
                 case UNKNOWN:
                     System.out.println("Please insert a value option!!!!!!");
                     break;

@@ -26,7 +26,7 @@ public class BookServiceImpl implements BookService {
         }
         if (authorid <= 0) {
             throw new IllegalArgumentException(
-                    "Provided id is begative or 0. Provided a valid value"
+                    "Provided id is negative or 0. Provided a valid value"
             );
         }
         Optional<Author> authorOptional = authorRepository.findById(authorid);
@@ -51,10 +51,27 @@ public class BookServiceImpl implements BookService {
     public Optional<Book> findById(int id) {
         if (id <= 0){
             throw new IllegalArgumentException(
-                    "Provided id is begative or 0. Provided a valid value"
+                    "Provided id is negative or 0. Provided a valid value"
             );
         }
         return bookRepository.findById(id);
 
+    }
+
+    @Override
+    public void deleteById(int id) {
+        if (id <= 0){
+            throw new IllegalArgumentException(
+                    "Provided id is negative or 0. Provided a valid value"
+            );
+        }
+        Optional<Book> optionalBook = bookRepository.findById(id);
+        if (optionalBook.isEmpty()){
+            throw new EntityNotFoundException(
+                    "Book with provided is was not found in the system"
+            );
+        }
+        Book book = optionalBook.get();
+        bookRepository.delete(book);
     }
 }
