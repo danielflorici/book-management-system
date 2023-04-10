@@ -12,7 +12,8 @@ public enum UserOption {
     UNKNOWN(99999, "Unlnown"),
     VIEW_ALL_BOOKS(6,"List All Books"),
     VIEW_BOOK_BY_ID(7,"Book bY Id"),
-    DELETE_BOOK(8,"Delete Book");
+    DELETE_BOOK(8,"Delete Book"),
+    UPDATE_BOOK(9,"Update Book");
     private final int option;
     private final String displayName;
 
